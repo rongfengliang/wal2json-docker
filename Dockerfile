@@ -18,5 +18,5 @@ RUN buildDeps="curl build-essential ca-certificates git   pkg-config glib2.0 pos
     && apt-get remove -y --purge ${buildDeps} \
     && apt-get autoremove -y --purge \
     && rm -rf /var/lib/apt/lists/
-RUN echo "max_replication_slots = 1" >> ${PGDATA}/postgresql.conf
-RUN echo "wal_level = logical" >> ${PGDATA}/postgresql.conf
+RUN echo "max_replication_slots = 1" >> /usr/share/postgresql/postgresql.conf.sample
+RUN echo "wal_level = logical" >> /usr/share/postgresql/postgresql.conf.sample
