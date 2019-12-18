@@ -1,4 +1,4 @@
-[![Coverity Scan Build Status](https://scan.coverity.com/projects/4832/badge.svg)](https://scan.coverity.com/projects/wal2json)
+>  wal2json docker image
 
 Introduction
 ============
